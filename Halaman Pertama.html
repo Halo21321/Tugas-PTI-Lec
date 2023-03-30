@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Growtopia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/javascript" href="javascript.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="next()">
+    <center>
+        <img src="Growtopia.webp">
+        <h4>But It's Not</h4>
+        <audio autoplay loop>
+            <source src="suspended.mp3" type="audio/mp3">
+        </audio>
+        <div class="slideshow-container" >
+            <button id="myButton" class="float-left submit-button" >Home</button>
+                <script type="text/javascript">
+                document.getElementById("myButton").onclick = function plusSlides() {
+                    location.href = "Halaman Kedua.html";
+                };
+                </script>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Growtopia player.png">
+                </div>
+          
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Growtopia player 1.png">
+                </div>
+          
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Growtopia player2.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        <br>
+        <form id="form1" action="Halaman Kedua.html" method="GET">           
+            <br>
+            <div>
+                <label for="name" id="label1">Name:</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br>
+            </div>
+            <button type="submit">Submit</button>
+        </form>         
+    </center>
+</body>
