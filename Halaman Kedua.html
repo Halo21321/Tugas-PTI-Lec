@@ -3,6 +3,7 @@
     <title>Growtopia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="text/javascript" href="javascript.js"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <center>
@@ -11,7 +12,17 @@
         <audio autoplay loop>
             <source src="y2mate.com - Growtopia OST About theme.mp3" type="audio/mp3">
         </audio>
-        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <div class="container">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span id="session">AM</span>
+        </div>
+        <br>
+        <div id="health-bar">
+            <div id="health-level"></div>
+        </div>
+        <button id="health-button">Increase Health</button>
     <br></br>
     </center>
 </body>
